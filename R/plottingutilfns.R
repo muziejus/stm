@@ -197,7 +197,7 @@ plotDifference <- function(prep,covariate,topics, cdata, cmat, simbetas, offset,
     for(i in 1:length(topics)){
       points(means[[i]], it, pch=16)
       lines(c(cis[[i]][1],cis[[i]][2]),c(it,it))
-      axis(2,at=it, labels=stringr::str_wrap(labels[i],width=width),las=1, cex=.25, tick=F, pos=cis[[i]][1])
+      axis(2,at=it, labels=stringr::str_wrap(labels[i],width=width),las=1, cex=.1, tick=F, pos=cis[[i]][1])
       it = it-1
     }
   }
